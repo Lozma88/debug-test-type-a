@@ -56,11 +56,14 @@ public class Ejercicio1 {
 	 * @return true si lo encuentra, false en otro caso
 	 */
 	public static boolean contains(int n, int[] arr) {
+		boolean resultado=false;
 		for(int i = 0; i < arr.length; i++) {
 			if (arr[i] == n)
-				return true;
+				resultado=true;
+			
+			else resultado=false;
 		}
-		return false;
+		return resultado;
 	}
 	
 	/**
